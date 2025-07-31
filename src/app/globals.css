@@ -1,1 +1,53 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+
+@themes {
+  /* Colors */
+  --color-*: initial;
+  --color-default-clr: oklch(0 0 0);
+  --color-light-clr: oklch(1 0 0);
+  --color-primary-clr: oklch(0.6883 0.2064 41.53);
+  --color-text-default-clr: var(--color-default-clr);
+  --color-text-light-clr: var(--color-light-clr);
+  --color-text-muted-clr: oklch(0.9731 0 0);
+
+  /* Font Family */
+  --font-*: initial;
+  --font-pp-neue-montreal: var(--font-pp-neue-montreal);
+
+  /* Font Weight */
+  --font-weight-*: initial;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /* Container */
+  --container-large: 95rem;
+  --container-medium: 64rem;
+  --container-small: 48rem;
+}
+
+@utility container {
+  @apply mx-auto px-6;
+
+  @variant md {
+    @apply max-w-[var(--container-small)] px-8;
+  }
+
+  @variant lg {
+    @apply max-w-[var(--container-medium)] px-0;
+  }
+
+  @variant xl {
+    @apply max-w-[var(--container-medium)] px-0;
+  }
+
+  @variant 2xl {
+    @apply max-w-[var(--container-large)] px-0;
+  }
+}
+
+@layer Base {
+  body {
+    @apply font-pp-neue-montreal font-regular overflow-x-hidden;
+  }
+}
