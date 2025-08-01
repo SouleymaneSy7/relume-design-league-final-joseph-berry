@@ -80,3 +80,45 @@
 /*     @apply font-semi-bold; */
 /*   } */
 /* } */
+
+@layer utilities {
+  .heading-x-large {
+    @apply text-heading-x-large leading-large font-medium;
+  }
+
+  .heading-large {
+    @apply text-heading-large leading-large font-regular;
+  }
+
+  .heading-medium {
+    @apply text-heading-medium leading-large font-regular;
+  }
+
+  .heading-small {
+    @apply text-heading-small leading-large font-regular;
+  }
+
+  .heading-1 {
+    @apply text-heading-1 leading-large font-regular;
+  }
+
+  .heading-2 {
+    @apply text-heading-2 leading-large;
+  }
+
+  .heading-3 {
+    @apply text-heading-3 leading-medium;
+  }
+
+  .heading-4 {
+    @apply text-heading-4 leading-medium;
+  }
+
+  .heading-5 {
+    @apply text-heading-5 leading-small;
+  }
+
+  .heading-6 {
+    @apply text-heading-6 leading-small;
+  }
+}
