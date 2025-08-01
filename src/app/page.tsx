@@ -1,3 +1,3 @@
 export default function Home() {
-  return <div>Next Starting Project!!!</div>;
+  return <div className="h-screen">Next Starting Project!!!</div>
 }
