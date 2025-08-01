@@ -1,14 +1,14 @@
 @import 'tailwindcss';
 
-@themes {
+@theme {
   /* Colors */
   --color-*: initial;
-  --color-dark-clr: oklch(0% 0 0);
-  --color-light-clr: oklch(1% 0 0);
-  --color-primary-clr: oklch(0.6883% 0.2064 41.53);
+  --color-dark-clr: oklch(0 0 0);
+  --color-light-clr: oklch(1 0 0);
+  --color-primary-clr: oklch(0.6883 0.2064 41.53);
   --color-text-default-clr: var(--color-dark-clr);
   --color-text-light-clr: var(--color-light-clr);
-  --color-text-muted-clr: oklch(0.9731% 0 0);
+  --color-text-muted-clr: oklch(0.9731 0 0);
 
   /* Font Family */
   --font-*: initial;
