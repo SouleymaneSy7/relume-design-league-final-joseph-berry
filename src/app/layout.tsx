@@ -1,7 +1,11 @@
 import './globals.css'
-import type { Metadata } from 'next'
 
+import type { Metadata } from 'next'
 import localFont from 'next/font/local'
+
+import SkipToContent from '@/components/common/SkipToContent'
+import Header from '@/components/layouts/Header'
+import Footer from '@/components/layouts/Footer'
 
 const PPNeueMontreal = localFont({
   src: [
@@ -54,7 +58,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${PPNeueMontreal.variable} antialiased`}>
+        <SkipToContent />
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   )
