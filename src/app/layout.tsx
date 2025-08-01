@@ -53,7 +53,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${PPNeueMontreal.className} antialiased`}>
+      <body className={`${PPNeueMontreal.variable} antialiased`}>
         {children}
       </body>
     </html>
