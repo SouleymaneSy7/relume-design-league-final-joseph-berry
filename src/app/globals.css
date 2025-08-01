@@ -3,12 +3,12 @@
 @themes {
   /* Colors */
   --color-*: initial;
-  --color-dark-clr: oklch(0 0 0);
-  --color-light-clr: oklch(1 0 0);
-  --color-primary-clr: oklch(0.6883 0.2064 41.53);
-  --color-text-default-clr: var(--color-default-clr);
+  --color-dark-clr: oklch(0% 0 0);
+  --color-light-clr: oklch(1% 0 0);
+  --color-primary-clr: oklch(0.6883% 0.2064 41.53);
+  --color-text-default-clr: var(--color-dark-clr);
   --color-text-light-clr: var(--color-light-clr);
-  --color-text-muted-clr: oklch(0.9731 0 0);
+  --color-text-muted-clr: oklch(0.9731% 0 0);
 
   /* Font Family */
   --font-*: initial;
@@ -36,7 +36,6 @@
   --text-small: clamp(0.875rem, 0.8393rem + 0.1786vw, 1rem);
 
   /* Font Weight */
-  --font-weight-*: initial;
   --font-weight-regular: 400;
   --font-weight-medium: 500;
   --font-weight-bold: 700;
@@ -67,8 +66,17 @@
   }
 }
 
-@layer Base {
+@layer base {
   body {
-    @apply bg-light-clr font-pp-neue-montreal font-regular text-text-light-clr overflow-x-hidden;
+    @apply bg-light-clr font-pp-neue-montreal font-regular text-text-default-clr overflow-x-hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-semi-bold;
   }
 }
