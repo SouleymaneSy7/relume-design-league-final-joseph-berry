@@ -59,19 +59,19 @@
   @apply mx-auto px-6;
 
   @variant tablet {
-    @apply max-w-[var(--container-small)] px-8;
+    @apply max-w-(--container-small) px-8;
   }
 
   @variant laptop {
-    @apply max-w-[var(--container-medium)] px-0;
+    @apply max-w-(--container-medium) px-0;
   }
 
   @variant desktop {
-    @apply max-w-[var(--container-large)] px-0;
+    @apply max-w-(--container-large) px-0;
   }
 
   @variant wide {
-    @apply max-w-[var(--container-x-large)] px-0;
+    @apply max-w-(--container-x-large) px-0;
   }
 }
 
@@ -129,5 +129,23 @@
 
   .heading-6 {
     @apply text-heading-6 leading-small;
+  }
+}
+
+@layer components {
+  .visually-hidden {
+    display: inline-block;
+    position: absolute;
+
+    height: 0.0625rem;
+    width: 0.0625rem;
+
+    border: 0;
+    clip: rect(0 0 0 0);
+
+    margin: -0.0625rem;
+    padding: 0;
+
+    overflow: hidden;
   }
 }
