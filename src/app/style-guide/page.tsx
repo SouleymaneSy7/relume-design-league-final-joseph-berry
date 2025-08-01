@@ -5,12 +5,63 @@ import { ArrowLeftIcon, ArrowRightIcon } from 'lucide-react'
 const page = () => {
   return (
     <main className="container">
-      <Title level="h1" className="text-heading-1 tracking-xs mb-8 font-bold">
+      <Title
+        level="h1"
+        className="text-heading-small tracking-xs mb-8 font-bold"
+      >
         Style Guide
       </Title>
 
+      <div className="space-y-5">
+        <Title level="h2" className="text-heading-1 mb-4 font-medium">
+          Text:
+        </Title>
+
+        <div className="space-y-3 divide-y-2">
+          <Title level="h2" className="heading-x-large">
+            Heading X Large
+          </Title>
+
+          <Title level="h2" className="heading-large">
+            Heading Large
+          </Title>
+
+          <Title level="h2" className="heading-medium">
+            Heading Medium
+          </Title>
+
+          <Title level="h2" className="heading-small">
+            Heading Small
+          </Title>
+
+          <Title level="h2" className="heading-1">
+            Heading 1
+          </Title>
+
+          <Title level="h2" className="heading-2">
+            Heading 2
+          </Title>
+
+          <Title level="h2" className="heading-3">
+            Heading 3
+          </Title>
+
+          <Title level="h2" className="heading-4">
+            Heading 4
+          </Title>
+
+          <Title level="h2" className="heading-5">
+            Heading 5
+          </Title>
+
+          <Title level="h2" className="heading-6">
+            Heading 6
+          </Title>
+        </div>
+      </div>
+
       <div>
-        <Title level="h2" className="text-heading-2 mb-4 font-medium">
+        <Title level="h2" className="text-heading-1 mb-4 font-medium">
           Button:
         </Title>
 
