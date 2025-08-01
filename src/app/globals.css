@@ -3,7 +3,7 @@
 @themes {
   /* Colors */
   --color-*: initial;
-  --color-default-clr: oklch(0 0 0);
+  --color-dark-clr: oklch(0 0 0);
   --color-light-clr: oklch(1 0 0);
   --color-primary-clr: oklch(0.6883 0.2064 41.53);
   --color-text-default-clr: var(--color-default-clr);
@@ -32,8 +32,8 @@
   --text-heading-5: clamp(1rem, 0.9286rem + 0.3571vw, 1.25rem);
   --text-heading-6: clamp(1rem, 0.9643rem + 0.1786vw, 1.125rem);
 
-  --text-fs-default: clamp(0.9375rem, 0.9196rem + 0.0893vw, 1rem);
-  --text-fs-small: clamp(0.875rem, 0.8393rem + 0.1786vw, 1rem);
+  --text-default: clamp(0.9375rem, 0.9196rem + 0.0893vw, 1rem);
+  --text-small: clamp(0.875rem, 0.8393rem + 0.1786vw, 1rem);
 
   /* Font Weight */
   --font-weight-*: initial;
