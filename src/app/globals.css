@@ -167,4 +167,10 @@
 
     width: min(100%, var(--max-width));
   }
+
+  .join-bg-image {
+    background-image: url('../../public/images/bike-img-2.jpg');
+    background-size: cover;
+    background-position: center center;
+  }
 }
