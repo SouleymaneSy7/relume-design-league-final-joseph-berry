@@ -148,4 +148,23 @@
 
     overflow: hidden;
   }
+
+  .responsive-flex {
+    --min: 10ch;
+    --gap: 2.5rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap);
+
+    & > * {
+      flex: 1 1 var(--min);
+    }
+  }
+
+  .footer-fluid-width {
+    --max-width: 600px;
+
+    width: min(100%, var(--max-width));
+  }
 }
