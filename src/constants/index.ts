@@ -6,6 +6,30 @@ import {
   TwitterIcon,
 } from 'lucide-react'
 
+const cards = [
+  {
+    id: crypto.randomUUID(),
+    cardImg: '/images/card-img-1.png',
+    cardTitle: 'High-quality Materials',
+    cardDescription:
+      'Premium materials and advanced construction techniques to ensure durability and a long lifespan.',
+  },
+  {
+    id: crypto.randomUUID(),
+    cardImg: '/images/card-img-2.png',
+    cardTitle: 'High-quality Materials',
+    cardDescription:
+      'Premium materials and advanced construction techniques to ensure durability and a long lifespan.',
+  },
+  {
+    id: crypto.randomUUID(),
+    cardImg: '/images/card-img-3.jpg',
+    cardTitle: 'High-quality Materials',
+    cardDescription:
+      'Premium materials and advanced construction techniques to ensure durability and a long lifespan.',
+  },
+]
+
 const star = [
   { id: crypto.randomUUID(), icon: StarIcon },
   { id: crypto.randomUUID(), icon: StarIcon },
@@ -25,4 +49,4 @@ const footerSocials = [
 
 const footerTerms = ['Privacy Policy', 'Terms Of Services', 'Cookies Settings']
 
-export { star, footerLinks1, footerLinks2, footerSocials, footerTerms }
+export { cards, star, footerLinks1, footerLinks2, footerSocials, footerTerms }
